@@ -1,0 +1,81 @@
+body {
+    background: url(../Prakarti-Analysis.blog/image\ copy.jpg) rgba(0, 0, 0, 0.37);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-family: Belgrano;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: #fff;
+    text-align: center;
+    font-family: Belgrano;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#btn {
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border-color: #E8D5B5;
+    border-style: solid;
+    background: #E8D5B5;
+    position: relative;
+    left: 42%;
+    right: 65%;
+}
+
+button {
+    font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        color: #fff;
+        text-align: center;
+        font-family: Belgrano;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    p {
+        color: #fff;
+        text-align: center;
+        font-family: Belgrano;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 30;
+        line-height: normal;
+    }
+
+    #btn {
+        width: 150px;
+        height: 40px;
+        left: 35%;
+    }
+
+    button {
+        font-size: 20px;
+    }
+
+    body {
+        background-size: 780px;
+        background-repeat: no-repeat;
+        background-position-x: right;
+    }
+}

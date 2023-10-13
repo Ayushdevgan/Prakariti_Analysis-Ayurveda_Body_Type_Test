@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakarti Analysis - Ayurveda Body Test</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Rubik+Pixels&display=swap');
+
+        body {
+            background: url(../Prakarti-Analysis.blog/image.jpg) rgba(0, 0, 0, 0.37);
+            background-size: cover;
+            background-blend-mode: darken;
+            background-attachment: fixed;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            left: 7%;
+            font-weight: normal;
+            position: relative;
+            font-size: 35px;
+            color: #fff;
+        }
+
+        span {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            left: 7%;
+            position: relative;
+            font-size: 35px;
+            color: #fff;
+        }
+
+        .container {
+            width: 680px;
+            height: 259px;
+            flex-shrink: 0;
+            position: relative;
+            left: 26%;
+            top: 15%;
+            border-radius: 19px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
+        }
+
+        .btn1 {
+            width: 200px;
+            height: 50px;
+            flex-shrink: 0;
+            background: #E8D5B5;
+            color: #000;
+            border-color: #E8D5B5;
+            border-style: solid;
+            border-radius: 10px;
+            position: relative;
+            left: 42%;
+            bottom: -20px;
+        }
+
+        button {
+            font-size: 25px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            left: 4%;
+            position: relative;
+            font-size: 25px;
+            color: #fff;
+        }
+
+        label {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            left: 18%;
+            position: relative;
+            font-size: 17px;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 45px;
+                font-weight: 400;
+            }
+
+            h2 {
+                font-size: 34px;
+                font-weight: 400;
+            }
+
+            span {
+                font-size: 34px;
+                font-weight: 400;
+            }
+
+            p {
+                color: #fff;
+                font-size: 24px;
+            }
+
+            .btn1 {
+                width: 150px;
+                height: 40px;
+                left: 40%;
+            }
+
+            button {
+                font-size: 20px;
+            }
+
+            body {
+                background-size: 1150px;
+                background-repeat: no-repeat;
+                background-position-x: right;
+            }
+
+            .container {
+                width: 420px;
+                height: 280px;
+                left: 15%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Prakarti Analysis - Ayurveda Body Type Test</h1>
+    <div class="container" id="question-container">
+        <br>
+        <div class="question">
+            <p>Q1. How would you describe your appetite?</p>
+            <label><input type="radio" name="q1" value="vata"> Irregular or low</label><br><br><br>
+            <label><input type="radio" name="q1" value="pitta"> Strong, can eat large amounts</label><br><br><br>
+            <label><input type="radio" name="q1" value="kapha"> Steady and moderate</label>
+        </div>
+
+        <div class="question">
+            <p>Q2. How is your energy level throughout the day?</p>
+            <label><input type="radio" name="q2" value="vata"> High but inconsistent</label><br><br><br>
+            <label><input type="radio" name="q2" value="pitta"> Moderate and stable</label><br><br><br>
+            <label><input type="radio" name="q2" value="kapha"> Low but steady</label>
+        </div>
+
+        <div class="question">
+            <p>Q3. How is your sleep pattern?</p>
+            <label><input type="radio" name="q3" value="vata"> Light sleeper, often interrupted</label><br><br><br>
+            <label><input type="radio" name="q3" value="pitta"> Sound sleeper, but short</label><br><br><br>
+            <label><input type="radio" name="q3" value="kapha"> Heavy sleeper, tends to oversleep</label>
+        </div>
+
+        <div class="question">
+            <p>Q4. What is your preferred temperature?</p>
+            <label><input type="radio" name="q4" value="vata"> Cold, dislikes cold weather</label><br><br><br>
+            <label><input type="radio" name="q4" value="pitta"> Hot, dislikes heat</label><br><br><br>
+            <label><input type="radio" name="q4" value="kapha"> Tolerant of different temperatures</label>
+        </div>
+
+        <div class="question">
+            <p>Q5. How is your digestion?</p>
+            <label><input type="radio" name="q5" value="vata"> Variable, sometimes quick, sometimes
+                slow</label><br><br><br>
+            <label><input type="radio" name="q5" value="pitta"> Strong, can digest almost anything</label><br><br><br>
+            <label><input type="radio" name="q5" value="kapha"> Slow, tends to have sluggish digestion</label>
+        </div>
+        <div class="question">
+            <p>Q6. How do you handle stress?</p>
+            <label><input type="radio" name="q6" value="vata"> Easily stressed and anxious</label><br><br><br>
+            <label><input type="radio" name="q6" value="pitta"> Quick to anger and competitive</label><br><br><br>
+            <label><input type="radio" name="q6" value="kapha"> Calm and patient under stress</label>
+        </div>
+
+        <div class="question">
+            <p>Q7. How would you describe your emotional nature?</p>
+            <label><input type="radio" name="q7" value="vata"> Anxious, prone to anxiety and fear</label><br><br><br>
+            <label><input type="radio" name="q7" value="pitta"> Irritable, tends to anger easily</label><br><br><br>
+            <label><input type="radio" name="q7" value="kapha"> Relaxed, patient, and compassionate</label>
+        </div>
+
+        <div class="question">
+            <p>Q8. What types of foods do you crave?</p>
+            <label><input type="radio" name="q8" value="vata"> Craves sweet and salty foods</label><br><br><br>
+            <label><input type="radio" name="q8" value="pitta"> Craves spicy and intense flavors</label><br><br><br>
+            <label><input type="radio" name="q8" value="kapha"> Craves heavy and comforting foods</label>
+        </div>
+
+        <div class="question">
+            <p>Q9. What is your preferred exercise routine?</p>
+            <label><input type="radio" name="q9" value="vata"> Likes gentle exercises like yoga</label><br><br><br>
+            <label><input type="radio" name="q9" value="pitta"> Enjoys intense, competitive sports</label><br><br><br>
+            <label><input type="radio" name="q9" value="kapha"> Prefers moderate exercises like walking</label>
+        </div>
+
+        <div class="question">
+            <p>Q10. How would you describe your hair type?</p>
+            <label><input type="radio" name="q10" value="vata"> Dry or frizzy hair</label><br><br><br>
+            <label><input type="radio" name="q10" value="pitta"> Fine hair, prone to premature
+                graying</label><br><br><br>
+            <label><input type="radio" name="q10" value="kapha"> Thick and lustrous hair</label>
+        </div>
+
+        <div class="question">
+            <p>Q11. How do you react to loud noises?</p>
+            <label><input type="radio" name="q11" value="vata"> Sensitive to loud noises</label><br><br><br>
+            <label><input type="radio" name="q11" value="pitta"> Easily irritated by loud noises</label><br><br><br>
+            <label><input type="radio" name="q11" value="kapha"> Tolerant of loud noises</label>
+        </div>
+
+        <div class="question">
+            <p>Q12. How is your memory and concentration?</p>
+            <label><input type="radio" name="q12" value="vata"> Sometimes forgetful, easily
+                distracted</label><br><br><br>
+            <label><input type="radio" name="q12" value="pitta"> Sharp memory and concentration</label><br><br><br>
+            <label><input type="radio" name="q12" value="kapha"> Stable memory and focus</label>
+        </div>
+
+        <div class="question">
+            <p>Q13. What is your preferred climate?</p>
+            <label><input type="radio" name="q13" value="vata"> Prefer warm climates</label><br><br><br>
+            <label><input type="radio" name="q13" value="pitta"> Prefer cool climates</label><br><br><br>
+            <label><input type="radio" name="q13" value="kapha"> Adapt well to different climates</label>
+        </div>
+
+        <div class="question">
+            <p>Q14. How do you react to caffeine?</p>
+            <label><input type="radio" name="q14" value="vata"> Sensitive to caffeine, makes you
+                jittery</label><br><br><br>
+            <label><input type="radio" name="q14" value="pitta"> Handle caffeine well, but can become
+                irritable</label><br><br><br>
+            <label><input type="radio" name="q14" value="kapha"> Can handle caffeine without issue</label>
+        </div>
+
+        <div class="question">
+            <p>Q15. How do you handle spicy foods?</p>
+            <label><input type="radio" name="q15" value="vata"> Sensitive to spicy foods</label><br><br><br>
+            <label><input type="radio" name="q15" value="pitta"> Love spicy foods, but may experience
+                heartburn</label><br><br><br>
+            <label><input type="radio" name="q15" value="kapha"> Enjoy spicy foods without issue</label>
+        </div>
+
+        <div class="question">
+            <p>Q16. What is your preferred meal size?</p>
+            <label><input type="radio" name="q16" value="vata"> Eat small, frequent meals</label><br><br><br>
+            <label><input type="radio" name="q16" value="pitta"> Eat moderate-sized meals</label><br><br><br>
+            <label><input type="radio" name="q16" value="kapha"> Prefer larger, hearty meals</label>
+        </div>
+
+        <div class="question">
+            <p>Q17. How is your bowel movement?</p>
+            <label><input type="radio" name="q17" value="vata"> Irregular or variable</label><br><br><br>
+            <label><input type="radio" name="q17" value="pitta"> Regular, usually without issues</label><br><br><br>
+            <label><input type="radio" name="q17" value="kapha"> Slow and heavy</label>
+        </div>
+
+        <div class="question">
+            <p>Q18. How do you react to stress?</p>
+            <label><input type="radio" name="q18" value="vata"> Become anxious and worried</label><br><br><br>
+            <label><input type="radio" name="q18" value="pitta"> Get easily irritated and impatient</label><br><br><br>
+            <label><input type="radio" name="q18" value="kapha"> Remain calm and patient</label>
+        </div>
+
+        <div class="question">
+            <p>Q19. What is your response to fasting or skipping meals?</p>
+            <label><input type="radio" name="q19" value="vata"> Become anxious and irritable</label><br><br><br>
+            <label><input type="radio" name="q19" value="pitta"> Can skip meals without major issues</label><br><br><br>
+            <label><input type="radio" name="q19" value="kapha"> Feel lethargic or uncomfortable when skipping
+                meals</label>
+        </div>
+
+        <div class="question">
+            <p>Q20. How would you describe your communication style?</p>
+            <label><input type="radio" name="q20" value="vata"> Talk quickly with many ideas</label><br><br><br>
+            <label><input type="radio" name="q20" value="pitta"> Articulate and persuasive speaker</label><br><br><br>
+            <label><input type="radio" name="q20" value="kapha"> Speak slowly and methodically</label>
+        </div>
+
+        <div id="result-screen" style="display: none;">
+            <h2>Your Ayurveda Body Type: <span id="result-type"></span></h2>
+            <p id="result-description"></p>
+        </div>
+        <!-- Continue with additional questions as needed -->
+
+    </div>
+
+    <button id="next-button" class="btn1">Next</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
